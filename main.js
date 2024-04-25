@@ -50,7 +50,7 @@ function disableInputs(inputFields, submitButton) {
             iptField.value = '';
             iptField.disabled = true;
         });
-    }, 5000); 
+    }, 2000); 
 }
 
 Forms.forEach( Form => {
