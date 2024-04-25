@@ -151,6 +151,8 @@ input{
     padding: var(--size-spacing-sm);
     padding-bottom: 0;
     transform: translateY(-100%);
+    transition: visibility 100ms ease;
+    transition-delay: 100ms;
     visibility: hidden;
 }
 
@@ -162,7 +164,7 @@ input{
     background-color: var(--color-dark-primary);
 }
 
-.tooltip:hover:not(:disabled) > .tooltiptext{
+.tooltip:hover:not(:disabled, :active, :focus) > .tooltiptext{
     visibility: visible;
 }
 
